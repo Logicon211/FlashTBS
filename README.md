@@ -12,7 +12,4 @@ A (quite big) project I started a while ago in flash. Wanted to make a large tur
 - Cities give more credits per turn
 - I set up the very basics of a tech tree as well. the few technologies there actually change the units in game
 - Research factories speed up research each turn
-- 
-
-
 - Feel free to fork and modify, I'd like to see this work go somewhere, I might come back to it in the future.

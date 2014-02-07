@@ -1,0 +1,27 @@
+Process in adding a new unit----------------
+
+-draw unit, give it different animation states:
+	-redIdle, blueIdle.....
+	-redDoneIdle, blueDoneIdle.....
+	-redActive, blueActive....
+	-more to come
+
+-create the unit class, give it different stats and abilities
+
+-Create a build button for the unit (ie for infantry, infantryButton). subclass UnitButton and give the unit variable the unit you just created
+
+-Add this button to the building which produce it in the "initializeBuildWindow()" function
+
+
+
+Process in adding a new building----------------------
+
+-draw building, give it different animation states:
+	-redIdle, blueIdle.....
+	-more to come
+	
+-create the building class, give it stats/abilities. If the building is an offensive structure then set the offensiveCapable variable to true
+
+- create a construct button for the building. subclass building button. Give the building variable the building you just created
+
+- Add this to the getConstructList() from the respective races builders

@@ -1,0 +1,34 @@
+Give it a name "insertRaceNameHere" + research name
+
+Create graphic
+
+Give graphics in 4 separate frames:
+	-researchSelected
+	-researchFinished
+	-researchNotAvailable
+
+create a class for it as a subclass of ResearchItem
+
+Define this in the class:
+	-xCord (X position on research map)
+	-yCord (Y position on research map)
+	-timeCost (Time cost of the research)
+	-timeLeft = timeCost
+	-researchName (name of the research)
+	-description (description of the research)
+	-prereqList.push ("add prerequisite research here")
+		-do this ^^ for every prerequisite of the research
+
+override the function onComplete(). 
+	-Make it go through the players unit or building list if it upgrades a unit, otherwise, you probably wont put the code in here. This is just for units and buildings already in play
+	- Add this to the end:
+		selected = false; //it is finished so it is no longer selected
+		player.activeResearch = null; //This is ocmpleted so the ucrrent actie research is nothing now.
+
+Go to the Player Race that owns this research and in its constructor add:
+	researchList[0] = new 'ResearchClassHere'();
+	researchList[0].initialize(this);
+
+if the research effects a unit or a buildings stats, make it check for THIS current research item in this unit/building's constructor to see if its complete, if so apply the desired upgrade effects.
+
+Otherwise, if its an upgrade that unlocks a unit, or unlocks a new menu item or something, have that item/building/whatever check to see if this upgrade has been complete, and if so, have the desired 'THING' available.

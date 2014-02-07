@@ -1,0 +1,3 @@
+Certain gameplay concepts needed to be remembered
+
+- Indirect fire units are the ONLY units to have a minumum range, and there will be very few direct fire units which do have a range longer than 1
